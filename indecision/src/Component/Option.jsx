@@ -4,7 +4,7 @@ class Option extends Component{
     render(){
         return(
             <div>
-                OptionCompont Here
+                {this.props.optionText}
             </div>
         );
     }

@@ -8,12 +8,13 @@ import Options from './Component/Options';
 function App() {
 const title ='Indecision';
 const subtitle ='Put your Life in the hands of a computer';
+const options =[ ' Thing one', 'Thing two', 'Thing Four'];
   return (
     <div className="App">
      
       <Header title={title} subtitle={subtitle}/>
       <Action />
-      <Options />
+      <Options options={options} />
       <AddOption />
     </div>
   );

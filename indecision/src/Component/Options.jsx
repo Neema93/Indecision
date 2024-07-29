@@ -3,8 +3,9 @@ import Option from "./Option";
 class Options extends Component{
     render(){
         return(
-        <div>options 
-            <Option />
+        <div>
+            { this.props.options.map((option) => <Option key={option} optionText={option}/>)}
+          
         </div>
     );
     }
