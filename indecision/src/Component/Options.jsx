@@ -1,8 +1,13 @@
 import { Component } from "react";
 import Option from "./Option";
 class Options extends Component{
+    constructor(props){
+        super(props);
+        this.handleRemoveAll = this.handleRemoveAll.bind(this);
+    }
     handleRemoveAll(){
-        alert('Remove All');
+        console.log(this.props.options);
+        // alert('Remove ');
     }
     render(){
        
