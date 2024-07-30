@@ -8,10 +8,14 @@ class Options extends Component{
         return(
         <div>
             <button onClick={this.props.handleDeleteOptions}>RemoveAll</button>
-            { this.props.options.map((option) => <Option key={option} optionText={option}/>)}
+            { this.props.options.map((option) => 
+            <Option key={option} optionText={option} handleDeleteOption={this.props.handleDeleteOption}/>
+            )}
           
         </div>
     );
     }
 }
+
+
 export default Options;

@@ -9,6 +9,10 @@ class Header extends Component{
                 <h2>{this.props.subtitle} </h2>
             </div>
         );
-    }
+    };
+   
+}
+Header.defaultProps ={
+    title: 'Indecision'
 }
 export default Header;
