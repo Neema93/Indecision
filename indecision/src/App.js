@@ -20,11 +20,18 @@ class App extends Component {
     };
   }
   componentDidMount(){
-    console.log('did Monunt');
+    const json = localStorage.getItem('options')
+    const options =JSON.parse(json);
+    this.setState(() => ({ options }));
+    console.log(options) 
   }
   componentDidUpdate(prevProps, prevState){
-    console.log('did Update');
-  }
+    if(prevState.options.length !== this.state.options.length){
+      const json =JSON.stringify(this.state.options);
+      localStorage.setItem('options',json)
+    }
+    }
+    
   componentWillUnmount(){
     console.log('will unmount');
   }
