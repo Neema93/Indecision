@@ -19,6 +19,15 @@ class App extends Component {
 
     };
   }
+  componentDidMount(){
+    console.log('did Monunt');
+  }
+  componentDidUpdate(prevProps, prevState){
+    console.log('did Update');
+  }
+  componentWillUnmount(){
+    console.log('will unmount');
+  }
   handleDeleteOptions() {
     this.setState(() => ({ options: [] }));
   }
