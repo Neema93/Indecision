@@ -65,7 +65,7 @@ class App extends Component {
     const subtitle = 'Put your Life in the hands of a computer';
 
     return (
-      <div className="App">
+      <div className="body">
 
         <Header title={title} subtitle={subtitle} />
         <Action hasOptions={this.state.options.length > 0} handlePick={this.handlePick} />
