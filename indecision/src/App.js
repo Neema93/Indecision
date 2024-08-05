@@ -70,7 +70,7 @@ class App extends Component {
 
         <Header title={title} subtitle={subtitle} />
         <div className='container'>
-        <Action hasOptions={this.state.options.length > 0} handlePick={this.handlePick} />
+        <Action  hasOptions={this.state.options.length > 0} handlePick={this.handlePick} />
         <Options options={this.state.options} handleDeleteOptions={this.handleDeleteOptions} handleDeleteOption={this.handleDeleteOption} />
         <AddOption handleAddOption={this.handleAddOption} />
         </div>
