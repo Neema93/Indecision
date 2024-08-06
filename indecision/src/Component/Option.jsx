@@ -1,11 +1,12 @@
 import { Component } from "react";
-
+import './Css/Base.css'
 class Option extends Component{
     render(){
         return(
-            <div>
-                {this.props.optionText}
-                <button onClick={(e) => {this.props.handleDeleteOption(this.props.optionText)}}>remove</button>
+            <div className="option">
+                  <p className="option__text">{this.props.count}. {this.props.optionText}</p>
+            
+                <button className="button button--link" onClick={(e) => {this.props.handleDeleteOption(this.props.optionText)}}>remove</button>
             </div>
         );
     }

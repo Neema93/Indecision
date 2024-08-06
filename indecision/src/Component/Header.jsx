@@ -8,8 +8,8 @@ class Header extends Component{
             <div className="header">
                 <div className="container">
                 
-                <h1 className="header_title"> {this.props.title} </h1>
-                <h2 className="header_subtitle">{this.props.subtitle} </h2>
+                <div className="header_title"> {this.props.title} </div>
+                <div className="header_subtitle">{this.props.subtitle} </div>
                 </div>
             </div>
         );
