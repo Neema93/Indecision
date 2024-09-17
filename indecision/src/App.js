@@ -6,7 +6,7 @@ import Action from './Component/Action';
 import AddOption from './Component/AddOption';
 import Options from './Component/Options';
 import { Component } from 'react';
-
+import "./Component/css/Main.css"
 class App extends Component {
   constructor(props) {
     super(props);
@@ -66,7 +66,7 @@ class App extends Component {
     const subtitle = 'Put your Life in the hands of a computer';
 
     return (
-      <div className="body">
+      <div >
 
         <Header title={title} subtitle={subtitle} />
         <div className='container'>
