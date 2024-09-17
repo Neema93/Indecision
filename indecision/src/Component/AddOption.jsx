@@ -1,6 +1,5 @@
 import { Component } from "react";
-import './Css/addoption.css'
-import './Css/Base.css'
+
 class AddOption extends Component{
     constructor(props){
         

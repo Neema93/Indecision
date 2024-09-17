@@ -1,5 +1,5 @@
 import { Component } from "react";
-import './Css/Base.css'
+
 class Option extends Component{
     render(){
         return(

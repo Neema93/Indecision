@@ -1,6 +1,6 @@
 
 import './App.css';
-import './Component/Css/Base.css';
+
 import Header from './Component/Header';
 import Action from './Component/Action';
 import AddOption from './Component/AddOption';

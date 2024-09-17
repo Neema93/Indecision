@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Option from "./Option";
-import './Css/Base.css'
+
 class Options extends Component{
  
    
