@@ -1,6 +1,6 @@
 
 import './App.css';
-
+import './Component/css/Button.css'
 import Header from './Component/Header';
 import Action from './Component/Action';
 import AddOption from './Component/AddOption';
@@ -69,10 +69,12 @@ class App extends Component {
       <div >
 
         <Header title={title} subtitle={subtitle} />
+        <div className='container-box'>
         <div className='container'>
         <Action  hasOptions={this.state.options.length > 0} handlePick={this.handlePick} />
         <Options options={this.state.options} handleDeleteOptions={this.handleDeleteOptions} handleDeleteOption={this.handleDeleteOption} />
         <AddOption handleAddOption={this.handleAddOption} />
+        </div>
         </div>
       </div>
     );

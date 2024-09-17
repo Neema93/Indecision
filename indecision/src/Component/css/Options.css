@@ -1,0 +1,22 @@
+.option {
+    box-shadow: 3px 5px lightgrey;
+    border: 1px solid lightgrey;
+    background-color: white;
+    margin: 5px 15px 10px 15px;
+    padding: 5px 5px 10px 5px;
+    text-align: center;
+    display: flex;
+  justify-content: space-between;
+  }
+  
+  .option:hover {
+    transform: scale(1.1);
+  }
+
+.option__text {
+    color: black;
+    font-size: 1rem;
+    margin: 0;
+    word-break: break-all;
+  }
+  

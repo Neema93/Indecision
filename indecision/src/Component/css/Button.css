@@ -1,0 +1,14 @@
+.button {
+    background:#4d6d8d ;
+    border: none;
+    border-bottom: .3rem solid darken(#4d6d8d, 10%);
+    color: white;
+    font-weight: 500;
+    
+  }
+  .button--link {
+    background: none;
+    border: none;
+    color: black;
+    padding: 0;
+  }
